@@ -9,7 +9,7 @@ Depot::Application.routes.draw do
 
  scope '(:locale)' do 
   resources :users
-
+   # match '/signup',  to: 'users#new', via: 'get'
 
   resources :orders
 
